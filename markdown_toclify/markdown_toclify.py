@@ -33,7 +33,7 @@ VALIDS = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-&'
 def read_lines(in_file):
     """Returns a list of lines from a input markdown file."""
 
-    with open(in_file, 'r') as inf:
+    with open(in_file, 'r', encoding='utf-8') as inf:
         in_contents = inf.read().split('\n')
     return in_contents
 
